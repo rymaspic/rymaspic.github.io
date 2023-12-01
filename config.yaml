@@ -1,9 +1,9 @@
-baseURL: ""
+baseURL: "https://rymaspic.github.io/"
 title: "XKai's Log"
 languageCode: zh
 defaultContentLanguage: zh
 paginate: 6
-theme: PaperMod
+theme: "PaperMod"
 
 enableRobotsTXT: true
 buildDrafts: false

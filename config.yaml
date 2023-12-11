@@ -1,8 +1,8 @@
 baseURL: "https://rymaspic.github.io/"
-title: "XKai's Log"
+title: "XKai"
 languageCode: zh
 defaultContentLanguage: zh
-paginate: 6
+paginate: 5
 theme: "PaperMod"
 
 enableRobotsTXT: true
@@ -18,7 +18,7 @@ minify:
 
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
-  title: "XKai's Log"
+  title: "XKai"
   description: "a place for active learning"
   keywords: [Blog, Xuankai Fang]
   author: Xuankai Fang
@@ -47,24 +47,24 @@ params:
   showtoc: true
   tocopen: false
 
-  # assets:
+  assets:
     # disableHLJS: true # to disable highlight.js
     # disableFingerprinting: true
-    # favicon: "<link / abs url>"
-    # favicon16x16: "<link / abs url>"
+    # favicon: "icons/winnie.jpg"
+    # favicon16x16: "icons/winnie.jpg"
     # favicon32x32: "<link / abs url>"
     # apple_touch_icon: "<link / abs url>"
     # safari_pinned_tab: "<link / abs url>"
 
-  label:
-    text: "XKai's log"
-    icon: img/winnie.jpg
-    iconHeight: 35
+  # label:
+  #   text: "XKai"
+  #   icon: "img/winnie.jpg"
+  #   iconHeight: 35
 
   # profile-mode
   profileMode:
     enabled: false # needs to be explicitly set
-    title: "XKai's blog"
+    title: "👋 Welcome to XKai's Log"
     subtitle: "This is subtitle"
     imageUrl: "<img location>"
     imageWidth: 120
@@ -72,20 +72,22 @@ params:
     imageTitle: my image
     buttons:
       - name: Posts
-        url: posts
+        url: posts/
       - name: Tags
         url: tags
 
   # home-info mode
   homeInfoParams:
-    Title: "XKai's blog"
-    Content: a place for active learning
+    Title: "👋 Welcome to XKai's Log"
+    Content: Hi, this is Xuankai. In this place I will documenting my learning notes regarding tech and business. Besides, I am a VC investor focusing AI/Cloud/Deeptech area.
 
   socialIcons:
     - name: github
       url: "https://github.com/rymaspic"
     - name: email
       url: "mailto://xuankaif@gmail.com"
+    - name: instagram
+      url: "https://www.instagram.com/xkaiaiai/"
 
   # analytics:
   #   google:
@@ -118,22 +120,39 @@ params:
 
 menu:
   main:
-    - identifier: archives
-      name: Archives
-      url: /archives/
-      weight: 10
-    - identifier: categories
-      name: Categories
-      url: /categories/
-      weight: 20
-    - identifier: tags
-      name: Tags
-      url: /tags/
-      weight: 30
     - identifier: search
-      name: Search
-      url: /search/
-      weight: 40
+      name: 🔍Search
+      url: search
+      weight: 100
+    - identifier: home
+      name: 🏠Home
+      url: /
+      weight: 1
+    - identifier: posts
+      name: 📚Posts
+      url: /posts
+      weight: 3
+    - identifier: archives
+      name: ⏱Archives
+      url: /archives
+      weight: 20
+    - identifier: categories
+      name: 🧩Categories
+      url: categories
+      weight: 30
+    # - identifier: tags
+    #   name: 🔖标签
+    #   url: /tags
+    #   weight: 40
+    # - identifier: about
+    #   name: 🙋🏻‍♂️关于
+    #   url: /about
+    #   weight: 50
+    # - identifier: links
+    #   name: 🤝友链
+    #   url: links
+    #   weight: 60
+
 
 
 # Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
